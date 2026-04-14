@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background:rgb(0, 255, 242);
+            color: rgb(0, 255, 242);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+
+
+
+        body {
+            padding-top: 80px;
+        }
+
+
+.logo {
+    float: left;
+    width: 40px;      
+    height: 40px;
+    margin: 5px 10px;
+    border-radius: 50%;
+ 
+}
+.header h2 {
+    float: left;
+    margin: 10px;
+}
+     
+        .nav_bar {
+            list-style-type: none;
+            background: black;
+            text-align: right;
+        }
+
+        html {
+      scroll-behavior: smooth;
+    }
+
+        .nav_bar li {
+            display: inline-block;
+
+        }
+
+        .nav_bar li a {
+            text-decoration: none;
+            color: rgb(0, 255, 242);
+            display: inline-block;
+            padding: 15px 20px;
+            
+        }
+
+        .nav_bar li a:hover {
+            background: orange;
+            color: white;
+        }
+
+        .pages {
+            display: none;
+            min-height: calc(100vh - 80px);
+            padding: 100px 20px;
+            color: white;
+        }
+
+        #Home {
+            display: block;
+        }
+
+        .pages:target {
+            display: block;
+        }
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            padding-left: 150px;
+        }
+
+        .home-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 0%;
+
+            margin-right: 300px;
+        }
+
+        .home-text {
+            color: white;
+            margin-left: 100px;
+        }
+
+        .home-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            
+
+        }
+
+        .home-text p {
+            font-size: 1.2em;
+            max-width: 450px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 255, 242, 0.3);
+        }
+        
+        
+        .contact-area {
+  display: flex;
+  gap: 57px;
+  align-items: stretch;
+  justify-content: center;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.1);
+  color: rgb(255, 255, 255);
+}
+
+.contact-form button {
+  width: 100px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 42px;
+  background: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
+
+}
+
+.contact-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.contact-social img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+#skills{
+display: block;
+
+}
+
+
+
+#About {
+            display: block;
+        }
+
+
+        .About-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 250px;
+        }
+
+        .About-image {
+            width: 500px;
+            height: 500px;
+            border-radius: 0%;
+
+        }
+
+        .About-text {
+            color: white;
+            margin-left: 500;
+        }
+
+        .About-text h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+           
+            
+
+        }
+
+        .About-text p {
+            font-size: 1.2em;
+            max-width: 450px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+      <nav class="header">
+         <img src="justin.png" class="logo">
+
+
+    <h2>Justin Roque</h2>
+        
+
+    
+        <ul class="nav_bar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+  </div>
+
+  <section class="pages" id="Home">
+    <div class="home-content">
+      <img src="nobgjustin.png" alt="Justin Roque" class="home-image">
+      <div class="home-text">
+       <h1 style="color: rgb(0, 255, 242)">Hi, I'm Justin Roque</h1>
+        <h1>College Student</h1>
+        <p>Hi! I’m a student passionate about technology and digital innovation. I enjoy exploring different tools, learning how systems work, and improving my skills in coding and software.
+             I like creating simple projects and finding practical ways to solve problems through technology.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="pages" id="Skills">
+    <h1>My skills are:</h1>
+    <img src="webdev.png">
+    <img src="javas.png">
+
+    
+    
+
+</section>
+
+<section class="pages" id="About">
+ 
+<div class="About-content">
+      <div class="About-text">
+       <h1 style="color: rgb(0, 255, 242)">Hi, I'm Justin Roque</h1>
+        <h1>College Student</h1>
+        <p>Hi! I’m a student passionate about technology and digital innovation. I enjoy exploring different tools, learning how systems work, and improving my skills in coding and software. I like creating simple projects and finding practical ways to solve problems through technology.</p>
+
+<p>I’m continuously learning and looking for opportunities to grow my skills and gain experience. My goal is to develop useful and efficient solutions while turning ideas into something meaningful through creativity and innovation.</p>
+
+      </div>
+      <img src="nobgjustin.png" alt="Justin Roque" class="About-image">
+</div>
+</section>
+
+
+<section class="pages" id="Contact">
+    <div class="contact-area">
+        <div class="contact-left">
+            <h1>Contact Me:</h1>
+            <p>Call me +63 962 198 2663</p>
+            <p>Email: Jajinboo@gmail.com</p>
+            <p>Follow me on social media:</p>
+            <div class="contact-social">
+               
+             <a href="https://www.instagram.com/justinlamaw" target="_blank">
+                <img src="insta.png" alt="Instagram">
+                </a> 
+
+             <a href="https://www.facebook.com/asdldndsisk" target="_blank">
+                <img src="fb.png" alt="Facebook">
+                </a> 
+
+            </div>
+        </div>
+        <div class="contact-right">
+            <form class="contact-form">
+                <input type="text" placeholder="YOUR NAME*">
+                <input type="text" placeholder="Contact Number*">
+                <input type="text" placeholder="Email*">
+                <textarea placeholder="Message*"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+ 
+        
+
+</body>
+</html>
